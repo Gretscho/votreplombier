@@ -1,0 +1,42 @@
+/* Theme neutre “Pro / Artisans” */
+:root{
+    --primary: #2F4F6B;    /* bleu-gris pro */
+    --secondary: #6BC6A1;  /* accent mint discret */
+    --light: #F5F7FA;
+    --dark: #1B2430;
+  }
+  
+  /* Police déjà chargée Inter/Roboto par index.html */
+  body{ color: var(--dark); background: #fff; }
+  
+  /* Boutons */
+  .btn.btn-primary{ background: var(--primary); border-color: var(--primary); }
+  .btn.btn-primary:hover{ background:#21394e; border-color:#21394e; }
+  .btn.btn-secondary{ background: var(--secondary); border-color: var(--secondary); color:#0f1b24; }
+  .btn.btn-secondary:hover{ filter: brightness(.95); }
+  
+  /* Links */
+  a{ color: var(--primary); }
+  a:hover{ color:#21394e; }
+  
+  /* Navbar / topbar */
+  .top-bar{ background: var(--light); }
+  .navbar{ box-shadow: 0 6px 20px rgba(0,0,0,.06); }
+  
+  /* Hero overlay plus clean */
+  .header-carousel .position-absolute[style*="rgba(0, 0, 0"]{
+    background: linear-gradient(180deg, rgba(0,0,0,.25), rgba(0,0,0,.55)) !important;
+  }
+  
+  /* Cartes/services plus modernes */
+  .service-item-top .bg-light{ background:#fff !important; }
+  .service-item-top .d-flex{ border:1px solid #eef2f6; border-radius:12px; }
+  .service-item-top .d-flex h5{ font-weight:700; color: var(--dark); }
+  .service-item-top .btn-outline-primary{ border-radius:10px; }
+  
+  /* Fact bloc : conserver l’effet mais avec nos couleurs */
+  .fact{ background: linear-gradient(rgba(0,0,0,.45), rgba(0,0,0,.45)), url(../img/bg.jpg) center/cover no-repeat; }
+  
+  /* Footer plus clair */
+  footer, .container-fluid.bg-dark:not(.fact){ background:#0f1621; }
+  
